@@ -1,0 +1,9 @@
+[package]
+name = "boot-dat-gen"
+version = "0.1.0"
+edition = "2021"
+description = "command line to generate a boot.dat from a payload for the switch"
+
+[dependencies]
+clap = "3.1.15"
+tx-custom-boot = {path="../tx-custom-boot"}
