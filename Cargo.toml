@@ -1,11 +1,12 @@
 [package]
 name = "boot-dat-gen"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "command line to generate a boot.dat from a payload for the switch"
 repository = "https://github.com/marcograss/boot-dat-gen"
 license-file = "LICENSE"
 
 [dependencies]
+anyhow = "1.0.57"
 clap = "3.1.15"
-tx-custom-boot = "0.1.0"
+tx-custom-boot = "0.2.0"
