@@ -63,7 +63,7 @@ dependencies = [
 
 [[package]]
 name = "boot-dat-gen"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "anyhow",
  "clap",
@@ -101,6 +101,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "conv"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "78ff10625fd0ac447827aa30ea8b861fead473bb60aeb73af6c1c58caf0d1299"
+dependencies = [
+ "custom_derive",
+]
+
+[[package]]
 name = "cpufeatures"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -118,6 +127,12 @@ dependencies = [
  "generic-array",
  "typenum",
 ]
+
+[[package]]
+name = "custom_derive"
+version = "0.1.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ef8ae57c4978a2acd8b869ce6b9ca1dfe817bff704c220209fdef2c0b75a01b9"
 
 [[package]]
 name = "digest"
@@ -284,11 +299,12 @@ dependencies = [
 
 [[package]]
 name = "tx-custom-boot"
-version = "0.2.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae785ae91da50851ca0ced3e5f50cd28af117a736de90f63d62122e93666f0a8"
+checksum = "fd53c891195a50d9bae52bbba74c87e78a1b4427b11a475742b055fd5c77ae45"
 dependencies = [
  "binwrite",
+ "conv",
  "sha2",
  "thiserror",
 ]
