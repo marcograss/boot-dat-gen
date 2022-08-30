@@ -8,5 +8,5 @@ license-file = "LICENSE"
 
 [dependencies]
 anyhow = "1.0.62"
-clap = "3.1.15"
+clap = "3.2.18"
 tx-custom-boot = "0.3.0"
