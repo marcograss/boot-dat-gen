@@ -7,6 +7,6 @@ repository = "https://github.com/marcograss/boot-dat-gen"
 license-file = "LICENSE"
 
 [dependencies]
-anyhow = "1.0.62"
+anyhow = "1.0.64"
 clap = "3.2.18"
 tx-custom-boot = "0.3.0"
