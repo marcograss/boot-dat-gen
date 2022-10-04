@@ -10,21 +10,20 @@ fn main() -> anyhow::Result<()> {
         .author(env!("CARGO_PKG_AUTHORS"))
         .arg(
             Arg::new("payload")
-                .takes_value(true)
                 .required(true)
                 .help("The payload to be converted to boot.dat"),
         )
         .arg(
             Arg::new("output")
-                .takes_value(true)
                 .required(false)
-                .help("The output file"),
+                .help("The output file")
+                .default_value("boot.dat"),
         );
 
     let matches = cmd.get_matches();
 
-    let payload = matches.value_of("payload").unwrap();
-    let output = matches.value_of("output").unwrap_or("boot.dat");
+    let payload = matches.get_one::<String>("payload").unwrap();
+    let output = matches.get_one::<String>("output").unwrap();
 
     // Check if the input file exists
     if !Path::new(payload).exists() {
