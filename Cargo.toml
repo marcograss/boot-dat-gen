@@ -1,10 +1,10 @@
 [package]
-name = "boot-dat-gen"
-version = "0.2.1"
-edition = "2021"
 description = "command line to generate a boot.dat from a payload for the switch"
-repository = "https://github.com/marcograss/boot-dat-gen"
+edition = "2021"
 license-file = "LICENSE"
+name = "boot-dat-gen"
+repository = "https://github.com/marcograss/boot-dat-gen"
+version = "0.2.2"
 
 [dependencies]
 anyhow = "1.0.65"
