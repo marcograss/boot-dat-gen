@@ -8,5 +8,5 @@ version = "0.2.2"
 
 [dependencies]
 anyhow = "1.0.68"
-clap = "4.0.32"
+clap = "4.1.1"
 tx-custom-boot = "0.3.0"
